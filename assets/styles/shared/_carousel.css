@@ -1,0 +1,13 @@
+.carousel-inner {
+
+    max-height: 650px;
+}
+
+.carousel-txt {
+
+    color: white;
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    transform: translateX(-20%), translateY(-45%);
+}

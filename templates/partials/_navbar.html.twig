@@ -1,0 +1,54 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+	<div class="container">
+		<a class="navbar-brand" href="#"><img src="	https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" height="36px"><span class="fw-bold">&nbsp;La Boutique Française</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-lg-5">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+			<form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+</nav>
+<!-- End navbar -->
+
+{% if app.request.get('_route') == 'app_home' %}
+	<!-- Carousel -->
+	<div id="carouselExample" class="carousel carousel-fade slide carousel-white" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		</div>
+		<div class="carousel-inner position-relative">
+			<div class="carousel-item active position-relative" data-bs-interval="5000">
+				<div class="carousel-txt d-md-block d-none">
+					<h3 class="fw-bolder">1er slide label</h3>
+					<p>Some representative placeholder content for the third slide.</p>
+					<a href="#" class="btn btn-warning">Découvrir</a>
+				</div>
+				<img src="{{ asset('img/owl1.jpg') }}" class="img-fluid w-100" alt="...">
+			</div>
+			<div class="carousel-item position-relative" data-bs-interval="5000">
+				<div class="carousel-txt d-md-block d-none">
+					<h3 class="fw-bolder">2ème slide label</h3>
+					<p>Some representative placeholder content for the third slide.</p>
+					<a href="#" class="btn btn-warning">Découvrir</a>
+				</div>
+				<img src="{{ asset('img/owl2.jpg') }}" class="img-fluid w-100" alt="...">
+			</div>
+		</div>
+	</div>
+	<!-- End carousel -->
+{% endif %}

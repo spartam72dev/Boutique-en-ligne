@@ -1,0 +1,14 @@
+footer {
+
+    background-color: var(--bg-nav);
+    color: white;
+}
+
+footer .made {
+
+    font-size: 13px;
+}
+
+.terms a:hover {
+    font-style: italic;
+}

@@ -1,0 +1,14 @@
+.card a div img {
+
+    transition: transform .7s;
+}
+
+.card:hover a div img {
+
+    transform: scale(1.15);
+}
+
+.brand {
+
+    width: 100px;
+}

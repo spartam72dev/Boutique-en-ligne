@@ -1,0 +1,114 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil!
+{% endblock %}
+
+{% block body %}
+	<!-- Product card -->
+	<div class="container my-5 pt-5">
+		<div class="row my-5">
+			<div class="col-lg-3">
+				<div class="card border-0">
+					<a href="#" class="text-decoration-none text-body">
+						<div class="overflow-hidden">
+							<img src="{{ asset('img/bonnet2.jpg') }}" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body text-center">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+																																card's content.</p>
+							<p class="text-primary h4 mt-3">80&euro;</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="card border-0">
+					<a href="#" class="text-decoration-none text-body">
+						<div class="overflow-hidden">
+							<img src="{{ asset('img/echarpe1.jpg') }}" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body text-center">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+																																content.</p>
+							<p class="text-primary h4 mt-3">80&euro;</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="card border-0">
+					<a href="#" class="text-decoration-none text-body">
+						<div class="overflow-hidden">
+							<img src="{{ asset('img/manteau1.jpg') }}" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body text-center">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+																																content.</p>
+							<p class="text-primary h4 mt-3">80&euro;</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="card border-0">
+					<a href="#" class="text-decoration-none text-body">
+						<div class="overflow-hidden">
+							<img src="{{ asset('img/tshirt2.jpg') }}" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body text-center">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+																																							content.</p>
+							<p class="text-primary h4 mt-3">80&euro;</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End product card -->
+
+
+		<!-- START THE FEATURETTES -->
+		<div class="row mb-5">
+			<hr>
+			<div class="col-lg-7">
+				<h2 class="featurette-heading fw-normal lh-1">First featurette heading.
+					<span class="text-body-secondary">It’ll
+																																																																																																																		          blow your mind.</span>
+				</h2>
+				<p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
+																																																																																															        here.</p>
+			</div>
+			<div class="col-lg-5">
+				<img src="{{ asset('img/home1.jpg') }}" class="img-fluid">
+			</div>
+		</div>
+
+		<div class="row mb-lg-5">
+			<hr>
+			<div class="col-lg-5 order-lg-0 order-1">
+				<img src="{{ asset('img/home2.jpg') }}" class="img-fluid">
+			</div>
+			<div class="col-lg-7">
+				<h2 class="featurette-heading fw-normal lh-1">First featurette heading.
+					<span class="text-body-secondary">It’ll
+																																																																																																																		          blow your mind.</span>
+				</h2>
+				<p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
+																																																																																															        here.</p>
+			</div>
+		</div>
+
+		<div class="row my-5 py-5">
+			<div class="col-lg-3 col-6 text-center p-2"><img src="{{ asset('img/brand_01.png') }}" class="img-fluid brand"></div>
+			<div class="col-lg-3 col-6 text-center p-2"><img src="{{ asset('img/brand_02.png') }}" class="img-fluid brand"></div>
+			<div class="col-lg-3 col-6 mt-lg-0 mt-4 text-center p-2"><img src="{{ asset('img/brand_03.png') }}" class="img-fluid brand"></div>
+			<div class="col-lg-3 col-6 mt-lg-0 mt-4 text-center p-2"><img src="{{ asset('img/brand_04.png') }}" class="img-fluid brand"></div>
+		</div>
+	</div>
+	<!-- End container -->
+	<!-- End featurettes -->
+{% endblock %}
